@@ -1,0 +1,2955 @@
+({:id 0
+  :data 0
+  :name :air
+  :label "Air"
+  }
+ {:id 1
+  :data 0
+  :name :stone
+  :label "Stone"
+  }
+ {:id 1
+  :data 1
+  :name :stone:1
+  :label "Granite"
+  }
+ {:id 1
+  :data 2
+  :name :stone:2
+  :label "Polished Granite"
+  }
+ {:id 1
+  :data 3
+  :name :stone:3
+  :label "Diorite"
+  }
+ {:id 1
+  :data 4
+  :name :stone:4
+  :label "Polished Diorite"
+  }
+ {:id 1
+  :data 5
+  :name :stone:5
+  :label "Andesite"
+  }
+ {:id 1
+  :data 6
+  :name :stone:6
+  :label "Polished Andesite"
+  }
+ {:id 2
+  :data 0
+  :name :grass
+  :label "Grass"
+  }
+ {:id 3
+  :data 0
+  :name :dirt
+  :label "Dirt"
+  }
+ {:id 3
+  :data 1
+  :name :dirt:1
+  :label "Dirt (No Grass)"
+  }
+ {:id 3
+  :data 2
+  :name :dirt:2
+  :label "Podzol"
+  }
+ {:id 4
+  :data 0
+  :name :cobblestone
+  :label "Cobblestone"
+  }
+ {:id 5
+  :data 0
+  :name :planks
+  :label "Wooden Plank (Oak)"
+  }
+ {:id 5
+  :data 1
+  :name :planks:1
+  :label "Wooden Plank (Spruce)"
+  }
+ {:id 5
+  :data 2
+  :name :planks:2
+  :label "Wooden Plank (Birch)"
+  }
+ {:id 5
+  :data 3
+  :name :planks:3
+  :label "Wooden Plank (Jungle)"
+  }
+ {:id 5
+  :data 4
+  :name :planks:4
+  :label "Wooden Plank (Acacia)"
+  }
+ {:id 5
+  :data 5
+  :name :planks:5
+  :label "Wooden Plank (Dark Oak)"
+  }
+ {:id 6
+  :data 0
+  :name :sapling
+  :label "Sapling (Oak)"
+  }
+ {:id 6
+  :data 1
+  :name :sapling:1
+  :label "Sapling (Spruce)"
+  }
+ {:id 6
+  :data 2
+  :name :sapling:2
+  :label "Sapling (Birch)"
+  }
+ {:id 6
+  :data 3
+  :name :sapling:3
+  :label "Sapling (Jungle)"
+  }
+ {:id 6
+  :data 4
+  :name :sapling:4
+  :label "Sapling (Acacia)"
+  }
+ {:id 6
+  :data 5
+  :name :sapling:5
+  :label "Sapling (Dark Oak)"
+  }
+ {:id 7
+  :data 0
+  :name :bedrock
+  :label "Bedrock"
+  }
+ {:id 8
+  :data 0
+  :name :flowing-water
+  :label "Water"
+  }
+ {:id 9
+  :data 0
+  :name :water
+  :label "Water (No Spread)"
+  }
+ {:id 10
+  :data 0
+  :name :flowing-lava
+  :label "Lava"
+  }
+ {:id 11
+  :data 0
+  :name :lava
+  :label "Lava (No Spread)"
+  }
+ {:id 12
+  :data 0
+  :name :sand
+  :label "Sand"
+  }
+ {:id 12
+  :data 1
+  :name :sand:1
+  :label "Red Sand"
+  }
+ {:id 13
+  :data 0
+  :name :gravel
+  :label "Gravel"
+  }
+ {:id 14
+  :data 0
+  :name :gold-ore
+  :label "Gold Ore"
+  }
+ {:id 15
+  :data 0
+  :name :iron-ore
+  :label "Iron Ore"
+  }
+ {:id 16
+  :data 0
+  :name :coal-ore
+  :label "Coal Ore"
+  }
+ {:id 17
+  :data 0
+  :name :log
+  :label "Wood (Oak)"
+  }
+ {:id 17
+  :data 1
+  :name :log:1
+  :label "Wood (Spruce)"
+  }
+ {:id 17
+  :data 2
+  :name :log:2
+  :label "Wood (Birch)"
+  }
+ {:id 17
+  :data 3
+  :name :log:3
+  :label "Wood (Jungle)"
+  }
+ {:id 17
+  :data 4
+  :name :log:4
+  :label "Wood (Oak 4)"
+  }
+ {:id 17
+  :data 5
+  :name :log:5
+  :label "Wood (Oak 5)"
+  }
+ {:id 18
+  :data 0
+  :name :leaves
+  :label "Leaves (Oak)"
+  }
+ {:id 18
+  :data 1
+  :name :leaves:1
+  :label "Leaves (Spruce)"
+  }
+ {:id 18
+  :data 2
+  :name :leaves:2
+  :label "Leaves (Birch)"
+  }
+ {:id 18
+  :data 3
+  :name :leaves:3
+  :label "Leaves (Jungle)"
+  }
+ {:id 19
+  :data 0
+  :name :sponge
+  :label "Sponge"
+  }
+ {:id 20
+  :data 0
+  :name :glass
+  :label "Glass"
+  }
+ {:id 21
+  :data 0
+  :name :lapis-ore
+  :label "Lapis Lazuli Ore"
+  }
+ {:id 22
+  :data 0
+  :name :lapis-block
+  :label "Lapis Lazuli Block"
+  }
+ {:id 23
+  :data 0
+  :name :dispenser
+  :label "Dispenser"
+  }
+ {:id 24
+  :data 0
+  :name :sandstone
+  :label "Sandstone"
+  }
+ {:id 24
+  :data 1
+  :name :sandstone:1
+  :label "Sandstone (Chiseled)"
+  }
+ {:id 24
+  :data 2
+  :name :sandstone:2
+  :label "Sandstone (Smooth)"
+  }
+ {:id 25
+  :data 0
+  :name :noteblock
+  :label "Note Block"
+  }
+ {:id 27
+  :data 0
+  :name :golden-rail
+  :label "Rail (Powered)"
+  }
+ {:id 28
+  :data 0
+  :name :detector-rail
+  :label "Rail (Detector)"
+  }
+ {:id 29
+  :data 0
+  :name :sticky-piston
+  :label "Sticky Piston"
+  }
+ {:id 30
+  :data 0
+  :name :web
+  :label "Cobweb"
+  }
+ {:id 31
+  :data 0
+  :name :tallgrass
+  :label "Tall Grass (Dead Shrub)"
+  }
+ {:id 31
+  :data 1
+  :name :tallgrass:1
+  :label "Tall Grass"
+  }
+ {:id 31
+  :data 2
+  :name :tallgrass:2
+  :label "Tall Grass (Fern)"
+  }
+ {:id 32
+  :data 0
+  :name :deadbush
+  :label "Dead Shrub"
+  }
+ {:id 33
+  :data 0
+  :name :piston
+  :label "Piston"
+  }
+ {:id 35
+  :data 0
+  :name :wool
+  :label "Wool"
+  }
+ {:id 35
+  :data 1
+  :name :wool:1
+  :label "Orange Wool"
+  }
+ {:id 35
+  :data 2
+  :name :wool:2
+  :label "Magenta Wool"
+  }
+ {:id 35
+  :data 3
+  :name :wool:3
+  :label "Light Blue Wool"
+  }
+ {:id 35
+  :data 4
+  :name :wool:4
+  :label "Yellow Wool"
+  }
+ {:id 35
+  :data 5
+  :name :wool:5
+  :label "Lime Wool"
+  }
+ {:id 35
+  :data 6
+  :name :wool:6
+  :label "Pink Wool"
+  }
+ {:id 35
+  :data 7
+  :name :wool:7
+  :label "Gray Wool"
+  }
+ {:id 35
+  :data 8
+  :name :wool:8
+  :label "Light Gray Wool"
+  }
+ {:id 35
+  :data 9
+  :name :wool:9
+  :label "Cyan Wool"
+  }
+ {:id 35
+  :data 10
+  :name :wool:10
+  :label "Purple Wool"
+  }
+ {:id 35
+  :data 11
+  :name :wool:11
+  :label "Blue Wool"
+  }
+ {:id 35
+  :data 12
+  :name :wool:12
+  :label "Brown Wool"
+  }
+ {:id 35
+  :data 13
+  :name :wool:13
+  :label "Green Wool"
+  }
+ {:id 35
+  :data 14
+  :name :wool:14
+  :label "Red Wool"
+  }
+ {:id 35
+  :data 15
+  :name :wool:15
+  :label "Black Wool"
+  }
+ {:id 37
+  :data 0
+  :name :yellow-flower
+  :label "Dandelion"
+  }
+ {:id 38
+  :data 0
+  :name :red-flower
+  :label "Poppy"
+  }
+ {:id 38
+  :data 1
+  :name :red-flower:1
+  :label "Blue Orchid"
+  }
+ {:id 38
+  :data 2
+  :name :red-flower:2
+  :label "Allium"
+  }
+ {:id 38
+  :data 4
+  :name :red-flower:4
+  :label "Red Tulip"
+  }
+ {:id 38
+  :data 5
+  :name :red-flower:5
+  :label "Orange Tulip"
+  }
+ {:id 38
+  :data 6
+  :name :red-flower:6
+  :label "White Tulip"
+  }
+ {:id 38
+  :data 7
+  :name :red-flower:7
+  :label "Pink Tulip"
+  }
+ {:id 38
+  :data 8
+  :name :red-flower:8
+  :label "Oxeye Daisy"
+  }
+ {:id 39
+  :data 0
+  :name :brown-mushroom
+  :label "Brown Mushroom"
+  }
+ {:id 40
+  :data 0
+  :name :red-mushroom
+  :label "Red Mushroom"
+  }
+ {:id 41
+  :data 0
+  :name :gold-block
+  :label "Block of Gold"
+  }
+ {:id 42
+  :data 0
+  :name :iron-block
+  :label "Block of Iron"
+  }
+ {:id 43
+  :data 0
+  :name :double-stone-slab
+  :label "Stone Slab (Double)"
+  }
+ {:id 43
+  :data 1
+  :name :double-stone-slab:1
+  :label "Sandstone Slab (Double)"
+  }
+ {:id 43
+  :data 2
+  :name :double-stone-slab:2
+  :label "Wooden Slab (Double)"
+  }
+ {:id 43
+  :data 3
+  :name :double-stone-slab:3
+  :label "Cobblestone Slab (Double)"
+  }
+ {:id 43
+  :data 4
+  :name :double-stone-slab:4
+  :label "Brick Slab (Double)"
+  }
+ {:id 43
+  :data 5
+  :name :double-stone-slab:5
+  :label "Stone Brick Slab (Double)"
+  }
+ {:id 43
+  :data 6
+  :name :double-stone-slab:6
+  :label "Nether Brick Slab (Double)"
+  }
+ {:id 43
+  :data 7
+  :name :double-stone-slab:7
+  :label "Quartz Slab (Double)"
+  }
+ {:id 43
+  :data 8
+  :name :double-stone-slab:8
+  :label "Smooth Stone Slab (Double)"
+  }
+ {:id 43
+  :data 9
+  :name :double-stone-slab:9
+  :label "Smooth Sandstone Slab (Double)"
+  }
+ {:id 44
+  :data 0
+  :name :stone-slab
+  :label "Stone Slab"
+  }
+ {:id 44
+  :data 1
+  :name :stone-slab:1
+  :label "Sandstone Slab"
+  }
+ {:id 44
+  :data 2
+  :name :stone-slab:2
+  :label "Wooden Slab"
+  }
+ {:id 44
+  :data 3
+  :name :stone-slab:3
+  :label "Cobblestone Slab"
+  }
+ {:id 44
+  :data 4
+  :name :stone-slab:4
+  :label "Brick Slab"
+  }
+ {:id 44
+  :data 5
+  :name :stone-slab:5
+  :label "Stone Brick Slab"
+  }
+ {:id 44
+  :data 6
+  :name :stone-slab:6
+  :label "Nether Brick Slab"
+  }
+ {:id 44
+  :data 7
+  :name :stone-slab:7
+  :label "Quartz Slab"
+  }
+ {:id 45
+  :data 0
+  :name :brick-block
+  :label "Brick"
+  }
+ {:id 46
+  :data 0
+  :name :tnt
+  :label "TNT"
+  }
+ {:id 47
+  :data 0
+  :name :bookshelf
+  :label "Bookshelf"
+  }
+ {:id 48
+  :data 0
+  :name :mossy-cobblestone
+  :label "Moss Stone"
+  }
+ {:id 49
+  :data 0
+  :name :obsidian
+  :label "Obsidian"
+  }
+ {:id 50
+  :data 0
+  :name :torch
+  :label "Torch"
+  }
+ {:id 51
+  :data 0
+  :name :fire
+  :label "Fire"
+  }
+ {:id 52
+  :data 0
+  :name :mob-spawner
+  :label "Mob Spawner"
+  }
+ {:id 53
+  :data 0
+  :name :oak-stairs
+  :label "Wooden Stairs (Oak)"
+  }
+ {:id 54
+  :data 0
+  :name :chest
+  :label "Chest"
+  }
+ {:id 56
+  :data 0
+  :name :diamond-ore
+  :label "Diamond Ore"
+  }
+ {:id 57
+  :data 0
+  :name :diamond-block
+  :label "Block of Diamond"
+  }
+ {:id 58
+  :data 0
+  :name :crafting-table
+  :label "Workbench"
+  }
+ {:id 60
+  :data 0
+  :name :farmland
+  :label "Farmland"
+  }
+ {:id 61
+  :data 0
+  :name :furnace
+  :label "Furnace"
+  }
+ {:id 62
+  :data 0
+  :name :lit-furnace
+  :label "Furnace (Smelting)"
+  }
+ {:id 65
+  :data 0
+  :name :ladder
+  :label "Ladder"
+  }
+ {:id 66
+  :data 0
+  :name :rail
+  :label "Rail"
+  }
+ {:id 67
+  :data 0
+  :name :stone-stairs
+  :label "Cobblestone Stairs"
+  }
+ {:id 69
+  :data 0
+  :name :lever
+  :label "Lever"
+  }
+ {:id 70
+  :data 0
+  :name :stone-pressure-plate
+  :label "Stone Pressure Plate"
+  }
+ {:id 72
+  :data 0
+  :name :wooden-pressure-plate
+  :label "Wooden Pressure Plate"
+  }
+ {:id 73
+  :data 0
+  :name :redstone-ore
+  :label "Redstone Ore"
+  }
+ {:id 76
+  :data 0
+  :name :redstone-torch
+  :label "Redstone Torch"
+  }
+ {:id 77
+  :data 0
+  :name :stone-button
+  :label "Button (Stone)"
+  }
+ {:id 78
+  :data 0
+  :name :snow-layer
+  :label "Snow"
+  }
+ {:id 79
+  :data 0
+  :name :ice
+  :label "Ice"
+  }
+ {:id 80
+  :data 0
+  :name :snow
+  :label "Snow Block"
+  }
+ {:id 81
+  :data 0
+  :name :cactus
+  :label "Cactus"
+  }
+ {:id 82
+  :data 0
+  :name :clay
+  :label "Clay Block"
+  }
+ {:id 84
+  :data 0
+  :name :jukebox
+  :label "Jukebox"
+  }
+ {:id 85
+  :data 0
+  :name :fence
+  :label "Fence"
+  }
+ {:id 86
+  :data 0
+  :name :pumpkin
+  :label "Pumpkin"
+  }
+ {:id 87
+  :data 0
+  :name :netherrack
+  :label "Netherrack"
+  }
+ {:id 88
+  :data 0
+  :name :soul-sand
+  :label "Soul Sand"
+  }
+ {:id 89
+  :data 0
+  :name :glowstone
+  :label "Glowstone"
+  }
+ {:id 90
+  :data 0
+  :name :portal
+  :label "Portal"
+  }
+ {:id 91
+  :data 0
+  :name :lit-pumpkin
+  :label "Jack-O-Lantern"
+  }
+ {:id 95
+  :data 0
+  :name :stained-glass
+  :label "Stained Glass (White)"
+  }
+ {:id 95
+  :data 1
+  :name :stained-glass:1
+  :label "Stained Glass (Orange)"
+  }
+ {:id 95
+  :data 2
+  :name :stained-glass:2
+  :label "Stained Glass (Magenta)"
+  }
+ {:id 95
+  :data 3
+  :name :stained-glass:3
+  :label "Stained Glass (Light Blue)"
+  }
+ {:id 95
+  :data 4
+  :name :stained-glass:4
+  :label "Stained Glass (Yellow)"
+  }
+ {:id 95
+  :data 5
+  :name :stained-glass:5
+  :label "Stained Glass (Lime)"
+  }
+ {:id 95
+  :data 6
+  :name :stained-glass:6
+  :label "Stained Glass (Pink)"
+  }
+ {:id 95
+  :data 7
+  :name :stained-glass:7
+  :label "Stained Glass (Gray)"
+  }
+ {:id 95
+  :data 8
+  :name :stained-glass:8
+  :label "Stained Glass (Light Grey)"
+  }
+ {:id 95
+  :data 9
+  :name :stained-glass:9
+  :label "Stained Glass (Cyan)"
+  }
+ {:id 95
+  :data 10
+  :name :stained-glass:10
+  :label "Stained Glass (Purple)"
+  }
+ {:id 95
+  :data 11
+  :name :stained-glass:11
+  :label "Stained Glass (Blue)"
+  }
+ {:id 95
+  :data 12
+  :name :stained-glass:12
+  :label "Stained Glass (Brown)"
+  }
+ {:id 95
+  :data 13
+  :name :stained-glass:13
+  :label "Stained Glass (Green)"
+  }
+ {:id 95
+  :data 14
+  :name :stained-glass:14
+  :label "Stained Glass (Red)"
+  }
+ {:id 95
+  :data 15
+  :name :stained-glass:15
+  :label "Stained Glass (Black)"
+  }
+ {:id 96
+  :data 0
+  :name :trapdoor
+  :label "Trapdoor"
+  }
+ {:id 97
+  :data 0
+  :name :monster-egg
+  :label "Monster Egg (Stone)"
+  }
+ {:id 97
+  :data 1
+  :name :monster-egg:1
+  :label "Monster Egg (Cobblestone)"
+  }
+ {:id 97
+  :data 2
+  :name :monster-egg:2
+  :label "Monster Egg (Stone Brick)"
+  }
+ {:id 97
+  :data 3
+  :name :monster-egg:3
+  :label "Monster Egg (Mossy Stone Brick)"
+  }
+ {:id 97
+  :data 4
+  :name :monster-egg:4
+  :label "Monster Egg (Cracked Stone)"
+  }
+ {:id 97
+  :data 5
+  :name :monster-egg:5
+  :label "Monster Egg (Chiseled Stone)"
+  }
+ {:id 98
+  :data 0
+  :name :stonebrick
+  :label "Stone Bricks"
+  }
+ {:id 98
+  :data 1
+  :name :stonebrick:1
+  :label "Mossy Stone Bricks"
+  }
+ {:id 98
+  :data 2
+  :name :stonebrick:2
+  :label "Cracked Stone Bricks"
+  }
+ {:id 98
+  :data 3
+  :name :stonebrick:3
+  :label "Chiseled Stone Brick"
+  }
+ {:id 99
+  :data 0
+  :name :brown-mushroom-block
+  :label "Brown Mushroom (Block)"
+  }
+ {:id 100
+  :data 0
+  :name :red-mushroom-block
+  :label "Red Mushroom (Block)"
+  }
+ {:id 101
+  :data 0
+  :name :iron-bars
+  :label "Iron Bars"
+  }
+ {:id 102
+  :data 0
+  :name :glass-pane
+  :label "Glass Pane"
+  }
+ {:id 103
+  :data 0
+  :name :melon-block
+  :label "Melon (Block)"
+  }
+ {:id 106
+  :data 0
+  :name :vine
+  :label "Vines"
+  }
+ {:id 107
+  :data 0
+  :name :fence-gate
+  :label "Fence Gate"
+  }
+ {:id 108
+  :data 0
+  :name :brick-stairs
+  :label "Brick Stairs"
+  }
+ {:id 109
+  :data 0
+  :name :stone-brick-stairs
+  :label "Stone Brick Stairs"
+  }
+ {:id 110
+  :data 0
+  :name :mycelium
+  :label "Mycelium"
+  }
+ {:id 111
+  :data 0
+  :name :waterlily
+  :label "Lily Pad"
+  }
+ {:id 112
+  :data 0
+  :name :nether-brick
+  :label "Nether Brick"
+  }
+ {:id 113
+  :data 0
+  :name :nether-brick-fence
+  :label "Nether Brick Fence"
+  }
+ {:id 114
+  :data 0
+  :name :nether-brick-stairs
+  :label "Nether Brick Stairs"
+  }
+ {:id 116
+  :data 0
+  :name :enchanting-table
+  :label "Enchantment Table"
+  }
+ {:id 119
+  :data 0
+  :name :end-portal
+  :label "End Portal"
+  }
+ {:id 120
+  :data 0
+  :name :end-portal-frame
+  :label "End Portal Frame"
+  }
+ {:id 121
+  :data 0
+  :name :end-stone
+  :label "End Stone"
+  }
+ {:id 122
+  :data 0
+  :name :dragon-egg
+  :label "Dragon Egg"
+  }
+ {:id 123
+  :data 0
+  :name :redstone-lamp
+  :label "Redstone Lamp"
+  }
+ {:id 125
+  :data 0
+  :name :double-wooden-slab
+  :label "Oak-Wood Slab (Double)"
+  }
+ {:id 125
+  :data 1
+  :name :double-wooden-slab:1
+  :label "Spruce-Wood Slab (Double)"
+  }
+ {:id 125
+  :data 2
+  :name :double-wooden-slab:2
+  :label "Birch-Wood Slab (Double)"
+  }
+ {:id 125
+  :data 3
+  :name :double-wooden-slab:3
+  :label "Jungle-Wood Slab (Double)"
+  }
+ {:id 125
+  :data 4
+  :name :double-wooden-slab:4
+  :label "Acacia Wood Slab (Double)"
+  }
+ {:id 125
+  :data 5
+  :name :double-wooden-slab:5
+  :label "Dark Oak Wood Slab (Double)"
+  }
+ {:id 126
+  :data 0
+  :name :wooden-slab
+  :label "Oak-Wood Slab"
+  }
+ {:id 126
+  :data 1
+  :name :wooden-slab:1
+  :label "Spruce-Wood Slab"
+  }
+ {:id 126
+  :data 2
+  :name :wooden-slab:2
+  :label "Birch-Wood Slab"
+  }
+ {:id 126
+  :data 3
+  :name :wooden-slab:3
+  :label "Jungle-Wood Slab"
+  }
+ {:id 126
+  :data 4
+  :name :wooden-slab:4
+  :label "Acacia Wood Slab"
+  }
+ {:id 126
+  :data 5
+  :name :wooden-slab:5
+  :label "Dark Oak Wood Slab"
+  }
+ {:id 127
+  :data 0
+  :name :cocoa
+  :label "Cocoa Plant"
+  }
+ {:id 128
+  :data 0
+  :name :sandstone-stairs
+  :label "Sandstone Stairs"
+  }
+ {:id 129
+  :data 0
+  :name :emerald-ore
+  :label "Emerald Ore"
+  }
+ {:id 130
+  :data 0
+  :name :ender-chest
+  :label "Ender Chest"
+  }
+ {:id 131
+  :data 0
+  :name :tripwire-hook
+  :label "Tripwire Hook"
+  }
+ {:id 133
+  :data 0
+  :name :emerald-block
+  :label "Block of Emerald"
+  }
+ {:id 134
+  :data 0
+  :name :spruce-stairs
+  :label "Wooden Stairs (Spruce)"
+  }
+ {:id 135
+  :data 0
+  :name :birch-stairs
+  :label "Wooden Stairs (Birch)"
+  }
+ {:id 136
+  :data 0
+  :name :jungle-stairs
+  :label "Wooden Stairs (Jungle)"
+  }
+ {:id 137
+  :data 0
+  :name :command-block
+  :label "Command Block"
+  }
+ {:id 138
+  :data 0
+  :name :beacon
+  :label "Beacon"
+  }
+ {:id 139
+  :data 0
+  :name :cobblestone-wall
+  :label "Cobblestone Wall"
+  }
+ {:id 139
+  :data 1
+  :name :cobblestone-wall:1
+  :label "Mossy Cobblestone Wall"
+  }
+ {:id 143
+  :data 0
+  :name :wooden-button
+  :label "Button (Wood)"
+  }
+ {:id 145
+  :data 0
+  :name :anvil
+  :label "Anvil"
+  }
+ {:id 145
+  :data 1
+  :name :anvil:1
+  :label "Anvil (Slightly Damaged)"
+  }
+ {:id 145
+  :data 2
+  :name :anvil:2
+  :label "Anvil (Very Damaged)"
+  }
+ {:id 146
+  :data 0
+  :name :trapped-chest
+  :label "Trapped Chest"
+  }
+ {:id 147
+  :data 0
+  :name :light-weighted-pressure-plate
+  :label "Weighted Pressure Plate (Light)"
+  }
+ {:id 148
+  :data 0
+  :name :heavy-weighted-pressure-plate
+  :label "Weighted Pressure Plate (Heavy)"
+  }
+ {:id 151
+  :data 0
+  :name :daylight-detector
+  :label "Daylight Sensor"
+  }
+ {:id 152
+  :data 0
+  :name :redstone-block
+  :label "Block of Redstone"
+  }
+ {:id 153
+  :data 0
+  :name :quartz-ore
+  :label "Nether Quartz Ore"
+  }
+ {:id 154
+  :data 0
+  :name :hopper
+  :label "Hopper"
+  }
+ {:id 155
+  :data 0
+  :name :quartz-block
+  :label "Quartz Block"
+  }
+ {:id 155
+  :data 1
+  :name :quartz-block:1
+  :label "Chiseled Quartz Block"
+  }
+ {:id 155
+  :data 2
+  :name :quartz-block:2
+  :label "Pillar Quartz Block"
+  }
+ {:id 156
+  :data 0
+  :name :quartz-stairs
+  :label "Quartz Stairs"
+  }
+ {:id 157
+  :data 0
+  :name :activator-rail
+  :label "Rail (Activator)"
+  }
+ {:id 158
+  :data 0
+  :name :dropper
+  :label "Dropper"
+  }
+ {:id 159
+  :data 0
+  :name :stained-hardened-clay
+  :label "Stained Clay (White)"
+  }
+ {:id 159
+  :data 1
+  :name :stained-hardened-clay:1
+  :label "Stained Clay (Orange)"
+  }
+ {:id 159
+  :data 2
+  :name :stained-hardened-clay:2
+  :label "Stained Clay (Magenta)"
+  }
+ {:id 159
+  :data 3
+  :name :stained-hardened-clay:3
+  :label "Stained Clay (Light Blue)"
+  }
+ {:id 159
+  :data 4
+  :name :stained-hardened-clay:4
+  :label "Stained Clay (Yellow)"
+  }
+ {:id 159
+  :data 5
+  :name :stained-hardened-clay:5
+  :label "Stained Clay (Lime)"
+  }
+ {:id 159
+  :data 6
+  :name :stained-hardened-clay:6
+  :label "Stained Clay (Pink)"
+  }
+ {:id 159
+  :data 7
+  :name :stained-hardened-clay:7
+  :label "Stained Clay (Gray)"
+  }
+ {:id 159
+  :data 8
+  :name :stained-hardened-clay:8
+  :label "Stained Clay (Light Gray)"
+  }
+ {:id 159
+  :data 9
+  :name :stained-hardened-clay:9
+  :label "Stained Clay (Cyan)"
+  }
+ {:id 159
+  :data 10
+  :name :stained-hardened-clay:10
+  :label "Stained Clay (Purple)"
+  }
+ {:id 159
+  :data 11
+  :name :stained-hardened-clay:11
+  :label "Stained Clay (Blue)"
+  }
+ {:id 159
+  :data 12
+  :name :stained-hardened-clay:12
+  :label "Stained Clay (Brown)"
+  }
+ {:id 159
+  :data 13
+  :name :stained-hardened-clay:13
+  :label "Stained Clay (Green)"
+  }
+ {:id 159
+  :data 14
+  :name :stained-hardened-clay:14
+  :label "Stained Clay (Red)"
+  }
+ {:id 159
+  :data 15
+  :name :stained-hardened-clay:15
+  :label "Stained Clay (Black)"
+  }
+ {:id 160
+  :data 0
+  :name :stained-glass-pane
+  :label "Stained Glass Pane (White)"
+  }
+ {:id 160
+  :data 1
+  :name :stained-glass-pane:1
+  :label "Stained Glass Pane (Orange)"
+  }
+ {:id 160
+  :data 2
+  :name :stained-glass-pane:2
+  :label "Stained Glass Pane (Magenta)"
+  }
+ {:id 160
+  :data 3
+  :name :stained-glass-pane:3
+  :label "Stained Glass Pane (Light Blue)"
+  }
+ {:id 160
+  :data 4
+  :name :stained-glass-pane:4
+  :label "Stained Glass Pane (Yellow)"
+  }
+ {:id 160
+  :data 5
+  :name :stained-glass-pane:5
+  :label "Stained Glass Pane (Lime)"
+  }
+ {:id 160
+  :data 6
+  :name :stained-glass-pane:6
+  :label "Stained Glass Pane (Pink)"
+  }
+ {:id 160
+  :data 7
+  :name :stained-glass-pane:7
+  :label "Stained Glass Pane (Gray)"
+  }
+ {:id 160
+  :data 8
+  :name :stained-glass-pane:8
+  :label "Stained Glass Pane (Light Gray)"
+  }
+ {:id 160
+  :data 9
+  :name :stained-glass-pane:9
+  :label "Stained Glass Pane (Cyan)"
+  }
+ {:id 160
+  :data 10
+  :name :stained-glass-pane:10
+  :label "Stained Glass Pane (Purple)"
+  }
+ {:id 160
+  :data 11
+  :name :stained-glass-pane:11
+  :label "Stained Glass Pane (Blue)"
+  }
+ {:id 160
+  :data 12
+  :name :stained-glass-pane:12
+  :label "Stained Glass Pane (Brown)"
+  }
+ {:id 160
+  :data 13
+  :name :stained-glass-pane:13
+  :label "Stained Glass Pane (Green)"
+  }
+ {:id 160
+  :data 14
+  :name :stained-glass-pane:14
+  :label "Stained Glass Pane (Red)"
+  }
+ {:id 160
+  :data 15
+  :name :stained-glass-pane:15
+  :label "Stained Glass Pane (Black)"
+  }
+ {:id 162
+  :data 0
+  :name :log2
+  :label "Wood (Acacia Oak)"
+  }
+ {:id 162
+  :data 1
+  :name :log2:1
+  :label "Wood (Dark Oak)"
+  }
+ {:id 163
+  :data 0
+  :name :acacia-stairs
+  :label "Wooden Stairs (Acacia)"
+  }
+ {:id 164
+  :data 0
+  :name :dark-oak-stairs
+  :label "Wooden Stairs (Dark Oak)"
+  }
+ {:id 165
+  :data 0
+  :name :slime
+  :label "Slime Block"
+  }
+ {:id 166
+  :data 0
+  :name :barrier
+  :label "Barrier"
+  }
+ {:id 167
+  :data 0
+  :name :iron-trapdoor
+  :label "Iron Trapdoor"
+  }
+ {:id 170
+  :data 0
+  :name :hay-block
+  :label "Hay Bale"
+  }
+ {:id 171
+  :data 0
+  :name :carpet
+  :label "Carpet (White)"
+  }
+ {:id 171
+  :data 1
+  :name :carpet:1
+  :label "Carpet (Orange)"
+  }
+ {:id 171
+  :data 2
+  :name :carpet:2
+  :label "Carpet (Magenta)"
+  }
+ {:id 171
+  :data 3
+  :name :carpet:3
+  :label "Carpet (Light Blue)"
+  }
+ {:id 171
+  :data 4
+  :name :carpet:4
+  :label "Carpet (Yellow)"
+  }
+ {:id 171
+  :data 5
+  :name :carpet:5
+  :label "Carpet (Lime)"
+  }
+ {:id 171
+  :data 6
+  :name :carpet:6
+  :label "Carpet (Pink)"
+  }
+ {:id 171
+  :data 7
+  :name :carpet:7
+  :label "Carpet (Grey)"
+  }
+ {:id 171
+  :data 8
+  :name :carpet:8
+  :label "Carpet (Light Gray)"
+  }
+ {:id 171
+  :data 9
+  :name :carpet:9
+  :label "Carpet (Cyan)"
+  }
+ {:id 171
+  :data 10
+  :name :carpet:10
+  :label "Carpet (Purple)"
+  }
+ {:id 171
+  :data 11
+  :name :carpet:11
+  :label "Carpet (Blue)"
+  }
+ {:id 171
+  :data 12
+  :name :carpet:12
+  :label "Carpet (Brown)"
+  }
+ {:id 171
+  :data 13
+  :name :carpet:13
+  :label "Carpet (Green)"
+  }
+ {:id 171
+  :data 14
+  :name :carpet:14
+  :label "Carpet (Red)"
+  }
+ {:id 171
+  :data 15
+  :name :carpet:15
+  :label "Carpet (Black)"
+  }
+ {:id 172
+  :data 0
+  :name :hardened-clay
+  :label "Hardened Clay"
+  }
+ {:id 173
+  :data 0
+  :name :coal-block
+  :label "Block of Coal"
+  }
+ {:id 174
+  :data 0
+  :name :packed-ice
+  :label "Packed Ice"
+  }
+ {:id 175
+  :data 0
+  :name :double-plant
+  :label "Sunflower"
+  }
+ {:id 175
+  :data 1
+  :name :double-plant:1
+  :label "Lilac"
+  }
+ {:id 175
+  :data 2
+  :name :double-plant:2
+  :label "Double Tallgrass"
+  }
+ {:id 175
+  :data 3
+  :name :double-plant:3
+  :label "Large Fern"
+  }
+ {:id 175
+  :data 4
+  :name :double-plant:4
+  :label "Rose Bush"
+  }
+ {:id 175
+  :data 5
+  :name :double-plant:5
+  :label "Peony"
+  }
+ {:id 256
+  :data 0
+  :name :iron-shovel
+  :label "Iron Shovel"
+  }
+ {:id 257
+  :data 0
+  :name :iron-pickaxe
+  :label "Iron Pickaxe"
+  }
+ {:id 258
+  :data 0
+  :name :iron-axe
+  :label "Iron Axe"
+  }
+ {:id 259
+  :data 0
+  :name :flint-and-steel
+  :label "Flint and Steel"
+  }
+ {:id 260
+  :data 0
+  :name :apple
+  :label "Apple"
+  }
+ {:id 261
+  :data 0
+  :name :bow
+  :label "Bow"
+  }
+ {:id 262
+  :data 0
+  :name :arrow
+  :label "Arrow"
+  }
+ {:id 263
+  :data 0
+  :name :coal
+  :label "Coal"
+  }
+ {:id 263
+  :data 1
+  :name :coal:1
+  :label "Charcoal"
+  }
+ {:id 264
+  :data 0
+  :name :diamond
+  :label "Diamond Gem"
+  }
+ {:id 265
+  :data 0
+  :name :iron-ingot
+  :label "Iron Ingot"
+  }
+ {:id 266
+  :data 0
+  :name :gold-ingot
+  :label "Gold Ingot"
+  }
+ {:id 267
+  :data 0
+  :name :iron-sword
+  :label "Iron Sword"
+  }
+ {:id 268
+  :data 0
+  :name :wooden-sword
+  :label "Wooden Sword"
+  }
+ {:id 269
+  :data 0
+  :name :wooden-shovel
+  :label "Wooden Shovel"
+  }
+ {:id 270
+  :data 0
+  :name :wooden-pickaxe
+  :label "Wooden Pickaxe"
+  }
+ {:id 271
+  :data 0
+  :name :wooden-axe
+  :label "Wooden Axe"
+  }
+ {:id 272
+  :data 0
+  :name :stone-sword
+  :label "Stone Sword"
+  }
+ {:id 273
+  :data 0
+  :name :stone-shovel
+  :label "Stone Shovel"
+  }
+ {:id 274
+  :data 0
+  :name :stone-pickaxe
+  :label "Stone Pickaxe"
+  }
+ {:id 275
+  :data 0
+  :name :stone-axe
+  :label "Stone Axe"
+  }
+ {:id 276
+  :data 0
+  :name :diamond-sword
+  :label "Diamond Sword"
+  }
+ {:id 277
+  :data 0
+  :name :diamond-shovel
+  :label "Diamond Shovel"
+  }
+ {:id 278
+  :data 0
+  :name :diamond-pickaxe
+  :label "Diamond Pickaxe"
+  }
+ {:id 279
+  :data 0
+  :name :diamond-axe
+  :label "Diamond Axe"
+  }
+ {:id 280
+  :data 0
+  :name :stick
+  :label "Stick"
+  }
+ {:id 281
+  :data 0
+  :name :bowl
+  :label "Bowl"
+  }
+ {:id 282
+  :data 0
+  :name :mushroom-stew
+  :label "Mushroom Stew"
+  }
+ {:id 283
+  :data 0
+  :name :golden-sword
+  :label "Gold Sword"
+  }
+ {:id 284
+  :data 0
+  :name :golden-shovel
+  :label "Gold Shovel"
+  }
+ {:id 285
+  :data 0
+  :name :golden-pickaxe
+  :label "Gold Pickaxe"
+  }
+ {:id 286
+  :data 0
+  :name :golden-axe
+  :label "Gold Axe"
+  }
+ {:id 287
+  :data 0
+  :name :string
+  :label "String"
+  }
+ {:id 288
+  :data 0
+  :name :feather
+  :label "Feather"
+  }
+ {:id 289
+  :data 0
+  :name :gunpowder
+  :label "Gunpowder"
+  }
+ {:id 290
+  :data 0
+  :name :wooden-hoe
+  :label "Wooden Hoe"
+  }
+ {:id 291
+  :data 0
+  :name :stone-hoe
+  :label "Stone Hoe"
+  }
+ {:id 292
+  :data 0
+  :name :iron-hoe
+  :label "Iron Hoe"
+  }
+ {:id 293
+  :data 0
+  :name :diamond-hoe
+  :label "Diamond Hoe"
+  }
+ {:id 294
+  :data 0
+  :name :golden-hoe
+  :label "Gold Hoe"
+  }
+ {:id 295
+  :data 0
+  :name :wheat-seeds
+  :label "Wheat Seeds"
+  }
+ {:id 296
+  :data 0
+  :name :wheat
+  :label "Wheat"
+  }
+ {:id 297
+  :data 0
+  :name :bread
+  :label "Bread"
+  }
+ {:id 298
+  :data 0
+  :name :leather-helmet
+  :label "Leather Helmet"
+  }
+ {:id 299
+  :data 0
+  :name :leather-chestplate
+  :label "Leather Chestplate"
+  }
+ {:id 300
+  :data 0
+  :name :leather-leggings
+  :label "Leather Leggings"
+  }
+ {:id 301
+  :data 0
+  :name :leather-boots
+  :label "Leather Boots"
+  }
+ {:id 302
+  :data 0
+  :name :chainmail-helmet
+  :label "Chainmail Helmet"
+  }
+ {:id 303
+  :data 0
+  :name :chainmail-chestplate
+  :label "Chainmail Chestplate"
+  }
+ {:id 304
+  :data 0
+  :name :chainmail-leggings
+  :label "Chainmail Leggings"
+  }
+ {:id 305
+  :data 0
+  :name :chainmail-boots
+  :label "Chainmail Boots"
+  }
+ {:id 306
+  :data 0
+  :name :iron-helmet
+  :label "Iron Helmet"
+  }
+ {:id 307
+  :data 0
+  :name :iron-chestplate
+  :label "Iron Chestplate"
+  }
+ {:id 308
+  :data 0
+  :name :iron-leggings
+  :label "Iron Leggings"
+  }
+ {:id 309
+  :data 0
+  :name :iron-boots
+  :label "Iron Boots"
+  }
+ {:id 310
+  :data 0
+  :name :diamond-helmet
+  :label "Diamond Helmet"
+  }
+ {:id 311
+  :data 0
+  :name :diamond-chestplate
+  :label "Diamond Chestplate"
+  }
+ {:id 312
+  :data 0
+  :name :diamond-leggings
+  :label "Diamond Leggings"
+  }
+ {:id 313
+  :data 0
+  :name :diamond-boots
+  :label "Diamond Boots"
+  }
+ {:id 314
+  :data 0
+  :name :golden-helmet
+  :label "Gold Helmet"
+  }
+ {:id 315
+  :data 0
+  :name :golden-chestplate
+  :label "Gold Chestplate"
+  }
+ {:id 316
+  :data 0
+  :name :golden-leggings
+  :label "Gold Leggings"
+  }
+ {:id 317
+  :data 0
+  :name :golden-boots
+  :label "Gold Boots"
+  }
+ {:id 318
+  :data 0
+  :name :flint
+  :label "Flint"
+  }
+ {:id 319
+  :data 0
+  :name :porkchop
+  :label "Raw Porkchop"
+  }
+ {:id 320
+  :data 0
+  :name :cooked-porkchop
+  :label "Cooked Porkchop"
+  }
+ {:id 321
+  :data 0
+  :name :painting
+  :label "Painting"
+  }
+ {:id 322
+  :data 0
+  :name :golden-apple
+  :label "Golden Apple"
+  }
+ {:id 322
+  :data 1
+  :name :golden-apple:1
+  :label "Enchanted Golden Apple"
+  }
+ {:id 323
+  :data 0
+  :name :sign
+  :label "Sign"
+  }
+ {:id 324
+  :data 0
+  :name :wooden-door
+  :label "Wooden Door"
+  }
+ {:id 325
+  :data 0
+  :name :bucket
+  :label "Bucket"
+  }
+ {:id 326
+  :data 0
+  :name :water-bucket
+  :label "Bucket (Water)"
+  }
+ {:id 327
+  :data 0
+  :name :lava-bucket
+  :label "Bucket (Lava)"
+  }
+ {:id 328
+  :data 0
+  :name :minecart
+  :label "Minecart"
+  }
+ {:id 329
+  :data 0
+  :name :saddle
+  :label "Saddle"
+  }
+ {:id 330
+  :data 0
+  :name :iron-door
+  :label "Iron Door"
+  }
+ {:id 331
+  :data 0
+  :name :redstone
+  :label "Redstone Dust"
+  }
+ {:id 332
+  :data 0
+  :name :snowball
+  :label "Snowball"
+  }
+ {:id 333
+  :data 0
+  :name :boat
+  :label "Boat"
+  }
+ {:id 334
+  :data 0
+  :name :leather
+  :label "Leather"
+  }
+ {:id 335
+  :data 0
+  :name :milk-bucket
+  :label "Bucket (Milk)"
+  }
+ {:id 336
+  :data 0
+  :name :brick
+  :label "Clay Brick"
+  }
+ {:id 337
+  :data 0
+  :name :clay-ball
+  :label "Clay"
+  }
+ {:id 338
+  :data 0
+  :name :reeds
+  :label "Sugar Cane"
+  }
+ {:id 339
+  :data 0
+  :name :paper
+  :label "Paper"
+  }
+ {:id 340
+  :data 0
+  :name :book
+  :label "Book"
+  }
+ {:id 341
+  :data 0
+  :name :slimeball
+  :label "Slime Ball"
+  }
+ {:id 342
+  :data 0
+  :name :chest-minecart
+  :label "Minecart (Storage)"
+  }
+ {:id 343
+  :data 0
+  :name :furnace-minecart
+  :label "Minecart (Powered)"
+  }
+ {:id 344
+  :data 0
+  :name :egg
+  :label "Egg"
+  }
+ {:id 345
+  :data 0
+  :name :compass
+  :label "Compass"
+  }
+ {:id 346
+  :data 0
+  :name :fishing-rod
+  :label "Fishing Rod"
+  }
+ {:id 347
+  :data 0
+  :name :clock
+  :label "Watch"
+  }
+ {:id 348
+  :data 0
+  :name :glowstone-dust
+  :label "Glowstone Dust"
+  }
+ {:id 349
+  :data 0
+  :name :fish
+  :label "Raw Fish"
+  }
+ {:id 349
+  :data 1
+  :name :fish:1
+  :label "Raw Salmon"
+  }
+ {:id 349
+  :data 2
+  :name :fish:2
+  :label "Clownfish"
+  }
+ {:id 349
+  :data 3
+  :name :fish:3
+  :label "Pufferfish"
+  }
+ {:id 350
+  :data 0
+  :name :cooked-fished
+  :label "Cooked Fish"
+  }
+ {:id 350
+  :data 1
+  :name :cooked-fished:1
+  :label "Cooked Salmon"
+  }
+ {:id 350
+  :data 2
+  :name :cooked-fished:2
+  :label "Clownfish"
+  }
+ {:id 350
+  :data 3
+  :name :cooked-fished:3
+  :label "Pufferfish"
+  }
+ {:id 351
+  :data 0
+  :name :dye
+  :label "Ink Sack"
+  }
+ {:id 351
+  :data 1
+  :name :dye:1
+  :label "Rose Red Dye"
+  }
+ {:id 351
+  :data 2
+  :name :dye:2
+  :label "Cactus Green Dye"
+  }
+ {:id 351
+  :data 3
+  :name :dye:3
+  :label "Cocoa Bean"
+  }
+ {:id 351
+  :data 4
+  :name :dye:4
+  :label "Lapis Lazuli"
+  }
+ {:id 351
+  :data 5
+  :name :dye:5
+  :label "Purple Dye"
+  }
+ {:id 351
+  :data 6
+  :name :dye:6
+  :label "Cyan Dye"
+  }
+ {:id 351
+  :data 7
+  :name :dye:7
+  :label "Light Gray Dye"
+  }
+ {:id 351
+  :data 8
+  :name :dye:8
+  :label "Gray Dye"
+  }
+ {:id 351
+  :data 9
+  :name :dye:9
+  :label "Pink Dye"
+  }
+ {:id 351
+  :data 10
+  :name :dye:10
+  :label "Lime Dye"
+  }
+ {:id 351
+  :data 11
+  :name :dye:11
+  :label "Dandelion Yellow Dye"
+  }
+ {:id 351
+  :data 12
+  :name :dye:12
+  :label "Light Blue Dye"
+  }
+ {:id 351
+  :data 13
+  :name :dye:13
+  :label "Magenta Dye"
+  }
+ {:id 351
+  :data 14
+  :name :dye:14
+  :label "Orange Dye"
+  }
+ {:id 351
+  :data 15
+  :name :dye:15
+  :label "Bone Meal"
+  }
+ {:id 352
+  :data 0
+  :name :bone
+  :label "Bone"
+  }
+ {:id 353
+  :data 0
+  :name :sugar
+  :label "Sugar"
+  }
+ {:id 354
+  :data 0
+  :name :cake
+  :label "Cake"
+  }
+ {:id 355
+  :data 0
+  :name :bed
+  :label "Bed"
+  }
+ {:id 356
+  :data 0
+  :name :repeater
+  :label "Redstone Repeater"
+  }
+ {:id 357
+  :data 0
+  :name :cookie
+  :label "Cookie"
+  }
+ {:id 358
+  :data 0
+  :name :filled-map
+  :label "Map"
+  }
+ {:id 359
+  :data 0
+  :name :shears
+  :label "Shears"
+  }
+ {:id 360
+  :data 0
+  :name :melon
+  :label "Melon (Slice)"
+  }
+ {:id 361
+  :data 0
+  :name :pumpkin-seeds
+  :label "Pumpkin Seeds"
+  }
+ {:id 362
+  :data 0
+  :name :melon-seeds
+  :label "Melon Seeds"
+  }
+ {:id 363
+  :data 0
+  :name :beef
+  :label "Raw Beef"
+  }
+ {:id 364
+  :data 0
+  :name :cooked-beef
+  :label "Steak"
+  }
+ {:id 365
+  :data 0
+  :name :chicken
+  :label "Raw Chicken"
+  }
+ {:id 366
+  :data 0
+  :name :cooked-chicken
+  :label "Cooked Chicken"
+  }
+ {:id 367
+  :data 0
+  :name :rotten-flesh
+  :label "Rotten Flesh"
+  }
+ {:id 368
+  :data 0
+  :name :ender-pearl
+  :label "Ender Pearl"
+  }
+ {:id 369
+  :data 0
+  :name :blaze-rod
+  :label "Blaze Rod"
+  }
+ {:id 370
+  :data 0
+  :name :ghast-tear
+  :label "Ghast Tear"
+  }
+ {:id 371
+  :data 0
+  :name :gold-nugget
+  :label "Gold Nugget"
+  }
+ {:id 372
+  :data 0
+  :name :nether-wart
+  :label "Nether Wart Seeds"
+  }
+ {:id 373
+  :data 0
+  :name :potion
+  :label "Water Bottle"
+  }
+ {:id 373
+  :data 16
+  :name :potion:16
+  :label "Awkward Potion"
+  }
+ {:id 373
+  :data 32
+  :name :potion:32
+  :label "Thick Potion"
+  }
+ {:id 373
+  :data 64
+  :name :potion:64
+  :label "Mundane Potion"
+  }
+ {:id 373
+  :data 8193
+  :name :potion:8193
+  :label "Regeneration Potion (0:45)"
+  }
+ {:id 373
+  :data 8194
+  :name :potion:8194
+  :label "Swiftness Potion (3:00)"
+  }
+ {:id 373
+  :data 8195
+  :name :potion:8195
+  :label "Fire Resistance Potion (3:00)"
+  }
+ {:id 373
+  :data 8196
+  :name :potion:8196
+  :label "Poison Potion (0:45)"
+  }
+ {:id 373
+  :data 8197
+  :name :potion:8197
+  :label "Healing Potion"
+  }
+ {:id 373
+  :data 8198
+  :name :potion:8198
+  :label "Night Vision Potion (3:00)"
+  }
+ {:id 373
+  :data 8200
+  :name :potion:8200
+  :label "Weakness Potion (1:30)"
+  }
+ {:id 373
+  :data 8201
+  :name :potion:8201
+  :label "Strength Potion (3:00)"
+  }
+ {:id 373
+  :data 8202
+  :name :potion:8202
+  :label "Slowness Potion (1:30)"
+  }
+ {:id 373
+  :data 8204
+  :name :potion:8204
+  :label "Harming Potion"
+  }
+ {:id 373
+  :data 8205
+  :name :potion:8205
+  :label "Water Breathing Potion (3:00)"
+  }
+ {:id 373
+  :data 8206
+  :name :potion:8206
+  :label "Invisibility Potion (3:00)"
+  }
+ {:id 373
+  :data 8225
+  :name :potion:8225
+  :label "Regeneration Potion II (0:22)"
+  }
+ {:id 373
+  :data 8226
+  :name :potion:8226
+  :label "Swiftness Potion II (1:30)"
+  }
+ {:id 373
+  :data 8228
+  :name :potion:8228
+  :label "Poison Potion II (0:22)"
+  }
+ {:id 373
+  :data 8229
+  :name :potion:8229
+  :label "Healing Potion II"
+  }
+ {:id 373
+  :data 8233
+  :name :potion:8233
+  :label "Strength Potion II (1:30)"
+  }
+ {:id 373
+  :data 8236
+  :name :potion:8236
+  :label "Harming Potion II"
+  }
+ {:id 373
+  :data 8257
+  :name :potion:8257
+  :label "Regeneration Potion (2:00)"
+  }
+ {:id 373
+  :data 8258
+  :name :potion:8258
+  :label "Swiftness Potion (8:00)"
+  }
+ {:id 373
+  :data 8259
+  :name :potion:8259
+  :label "Fire Resistance Potion (8:00)"
+  }
+ {:id 373
+  :data 8260
+  :name :potion:8260
+  :label "Poison Potion (2:00)"
+  }
+ {:id 373
+  :data 8262
+  :name :potion:8262
+  :label "Night Vision Potion (8:00)"
+  }
+ {:id 373
+  :data 8264
+  :name :potion:8264
+  :label "Weakness Potion (4:00)"
+  }
+ {:id 373
+  :data 8265
+  :name :potion:8265
+  :label "Strength Potion (8:00)"
+  }
+ {:id 373
+  :data 8266
+  :name :potion:8266
+  :label "Slowness Potion (4:00)"
+  }
+ {:id 373
+  :data 8269
+  :name :potion:8269
+  :label "Water Breathing Potion (8:00)"
+  }
+ {:id 373
+  :data 8270
+  :name :potion:8270
+  :label "Invisibility Potion (8:00)"
+  }
+ {:id 373
+  :data 8289
+  :name :potion:8289
+  :label "Regeneration Potion II (1:00)"
+  }
+ {:id 373
+  :data 8290
+  :name :potion:8290
+  :label "Swiftness Potion II (4:00)"
+  }
+ {:id 373
+  :data 8292
+  :name :potion:8292
+  :label "Poison Potion II (1:00)"
+  }
+ {:id 373
+  :data 8297
+  :name :potion:8297
+  :label "Strength Potion II (4:00)"
+  }
+ {:id 373
+  :data 16385
+  :name :potion:16385
+  :label "Regeneration Splash (0:33)"
+  }
+ {:id 373
+  :data 16386
+  :name :potion:16386
+  :label "Swiftness Splash (2:15)"
+  }
+ {:id 373
+  :data 16387
+  :name :potion:16387
+  :label "Fire Resistance Splash (2:15)"
+  }
+ {:id 373
+  :data 16388
+  :name :potion:16388
+  :label "Poison Splash (0:33)"
+  }
+ {:id 373
+  :data 16389
+  :name :potion:16389
+  :label "Healing Splash"
+  }
+ {:id 373
+  :data 16390
+  :name :potion:16390
+  :label "Night Vision Splash (2:15)"
+  }
+ {:id 373
+  :data 16392
+  :name :potion:16392
+  :label "Weakness Splash (1:07)"
+  }
+ {:id 373
+  :data 16393
+  :name :potion:16393
+  :label "Strength Splash (2:15)"
+  }
+ {:id 373
+  :data 16394
+  :name :potion:16394
+  :label "Slowness Splash (1:07)"
+  }
+ {:id 373
+  :data 16396
+  :name :potion:16396
+  :label "Harming Splash"
+  }
+ {:id 373
+  :data 16397
+  :name :potion:16397
+  :label "Breathing Splash (2:15)"
+  }
+ {:id 373
+  :data 16398
+  :name :potion:16398
+  :label "Invisibility Splash (2:15)"
+  }
+ {:id 373
+  :data 16417
+  :name :potion:16417
+  :label "Regeneration Splash II (0:16)"
+  }
+ {:id 373
+  :data 16418
+  :name :potion:16418
+  :label "Swiftness Splash II (1:07)"
+  }
+ {:id 373
+  :data 16420
+  :name :potion:16420
+  :label "Poison Splash II (0:16)"
+  }
+ {:id 373
+  :data 16421
+  :name :potion:16421
+  :label "Healing Splash II"
+  }
+ {:id 373
+  :data 16425
+  :name :potion:16425
+  :label "Strength Splash II (1:07)"
+  }
+ {:id 373
+  :data 16428
+  :name :potion:16428
+  :label "Harming Splash II"
+  }
+ {:id 373
+  :data 16449
+  :name :potion:16449
+  :label "Regeneration Splash (1:30)"
+  }
+ {:id 373
+  :data 16450
+  :name :potion:16450
+  :label "Swiftness Splash (6:00)"
+  }
+ {:id 373
+  :data 16451
+  :name :potion:16451
+  :label "Fire Resistance Splash (6:00)"
+  }
+ {:id 373
+  :data 16452
+  :name :potion:16452
+  :label "Poison Splash (1:30)"
+  }
+ {:id 373
+  :data 16454
+  :name :potion:16454
+  :label "Night Vision Splash (6:00)"
+  }
+ {:id 373
+  :data 16456
+  :name :potion:16456
+  :label "Weakness Splash (3:00)"
+  }
+ {:id 373
+  :data 16457
+  :name :potion:16457
+  :label "Strength Splash (6:00)"
+  }
+ {:id 373
+  :data 16458
+  :name :potion:16458
+  :label "Slowness Splash (3:00)"
+  }
+ {:id 373
+  :data 16461
+  :name :potion:16461
+  :label "Breathing Splash (6:00)"
+  }
+ {:id 373
+  :data 16462
+  :name :potion:16462
+  :label "Invisibility Splash (6:00)"
+  }
+ {:id 373
+  :data 16481
+  :name :potion:16481
+  :label "Regeneration Splash II (0:45)"
+  }
+ {:id 373
+  :data 16482
+  :name :potion:16482
+  :label "Swiftness Splash II (3:00)"
+  }
+ {:id 373
+  :data 16484
+  :name :potion:16484
+  :label "Poison Splash II (0:45)"
+  }
+ {:id 373
+  :data 16489
+  :name :potion:16489
+  :label "Strength Splash II (3:00)"
+  }
+ {:id 374
+  :data 0
+  :name :glass-bottle
+  :label "Glass Bottle"
+  }
+ {:id 375
+  :data 0
+  :name :spider-eye
+  :label "Spider Eye"
+  }
+ {:id 376
+  :data 0
+  :name :fermented-spider-eye
+  :label "Fermented Spider Eye"
+  }
+ {:id 377
+  :data 0
+  :name :blaze-powder
+  :label "Blaze Powder"
+  }
+ {:id 378
+  :data 0
+  :name :magma-cream
+  :label "Magma Cream"
+  }
+ {:id 379
+  :data 0
+  :name :brewing-stand
+  :label "Brewing Stand"
+  }
+ {:id 380
+  :data 0
+  :name :cauldron
+  :label "Cauldron"
+  }
+ {:id 381
+  :data 0
+  :name :ender-eye
+  :label "Eye of Ender"
+  }
+ {:id 382
+  :data 0
+  :name :speckled-melon
+  :label "Glistering Melon (Slice)"
+  }
+ {:id 383
+  :data 50
+  :name :spawn-egg:50
+  :label "Spawn Egg (Creeper)"
+  }
+ {:id 383
+  :data 51
+  :name :spawn-egg:51
+  :label "Spawn Egg (Skeleton)"
+  }
+ {:id 383
+  :data 52
+  :name :spawn-egg:52
+  :label "Spawn Egg (Spider)"
+  }
+ {:id 383
+  :data 54
+  :name :spawn-egg:54
+  :label "Spawn Egg (Zombie)"
+  }
+ {:id 383
+  :data 55
+  :name :spawn-egg:55
+  :label "Spawn Egg (Slime)"
+  }
+ {:id 383
+  :data 56
+  :name :spawn-egg:56
+  :label "Spawn Egg (Ghast)"
+  }
+ {:id 383
+  :data 57
+  :name :spawn-egg:57
+  :label "Spawn Egg (Zombie Pigmen)"
+  }
+ {:id 383
+  :data 58
+  :name :spawn-egg:58
+  :label "Spawn Egg (Endermen)"
+  }
+ {:id 383
+  :data 59
+  :name :spawn-egg:59
+  :label "Spawn Egg (Cave Spider)"
+  }
+ {:id 383
+  :data 60
+  :name :spawn-egg:60
+  :label "Spawn Egg (Silverfish)"
+  }
+ {:id 383
+  :data 61
+  :name :spawn-egg:61
+  :label "Spawn Egg (Blaze)"
+  }
+ {:id 383
+  :data 62
+  :name :spawn-egg:62
+  :label "Spawn Egg (Magma Cube)"
+  }
+ {:id 383
+  :data 65
+  :name :spawn-egg:65
+  :label "Spawn Egg (Bat)"
+  }
+ {:id 383
+  :data 66
+  :name :spawn-egg:66
+  :label "Spawn Egg (Witch)"
+  }
+ {:id 383
+  :data 90
+  :name :spawn-egg:90
+  :label "Spawn Egg (Pig)"
+  }
+ {:id 383
+  :data 91
+  :name :spawn-egg:91
+  :label "Spawn Egg (Sheep)"
+  }
+ {:id 383
+  :data 92
+  :name :spawn-egg:92
+  :label "Spawn Egg (Cow)"
+  }
+ {:id 383
+  :data 93
+  :name :spawn-egg:93
+  :label "Spawn Egg (Chicken)"
+  }
+ {:id 383
+  :data 94
+  :name :spawn-egg:94
+  :label "Spawn Egg (Squid)"
+  }
+ {:id 383
+  :data 95
+  :name :spawn-egg:95
+  :label "Spawn Egg (Wolf)"
+  }
+ {:id 383
+  :data 96
+  :name :spawn-egg:96
+  :label "Spawn Egg (Mooshroom)"
+  }
+ {:id 383
+  :data 98
+  :name :spawn-egg:98
+  :label "Spawn Egg (Ocelot)"
+  }
+ {:id 383
+  :data 100
+  :name :spawn-egg:100
+  :label "Spawn Egg (Horse)"
+  }
+ {:id 383
+  :data 120
+  :name :spawn-egg:120
+  :label "Spawn Egg (Villager)"
+  }
+ {:id 384
+  :data 0
+  :name :experience-bottle
+  :label "Bottle of Enchanting"
+  }
+ {:id 385
+  :data 0
+  :name :fire-charge
+  :label "Fire Charge"
+  }
+ {:id 386
+  :data 0
+  :name :writable-book
+  :label "Book and Quill"
+  }
+ {:id 387
+  :data 0
+  :name :written-book
+  :label "Written Book"
+  }
+ {:id 388
+  :data 0
+  :name :emerald
+  :label "Emerald"
+  }
+ {:id 389
+  :data 0
+  :name :item-frame
+  :label "Item Frame"
+  }
+ {:id 390
+  :data 0
+  :name :flower-pot
+  :label "Flower Pot"
+  }
+ {:id 391
+  :data 0
+  :name :carrot
+  :label "Carrot"
+  }
+ {:id 392
+  :data 0
+  :name :potato
+  :label "Potato"
+  }
+ {:id 393
+  :data 0
+  :name :baked-potato
+  :label "Baked Potato"
+  }
+ {:id 394
+  :data 0
+  :name :poisonous-potato
+  :label "Poisonous Potato"
+  }
+ {:id 395
+  :data 0
+  :name :map
+  :label "Empty Map"
+  }
+ {:id 396
+  :data 0
+  :name :golden-carrot
+  :label "Golden Carrot"
+  }
+ {:id 397
+  :data 0
+  :name :skull
+  :label "Head (Skeleton)"
+  }
+ {:id 397
+  :data 1
+  :name :skull:1
+  :label "Head (Wither)"
+  }
+ {:id 397
+  :data 2
+  :name :skull:2
+  :label "Head (Zombie)"
+  }
+ {:id 397
+  :data 3
+  :name :skull:3
+  :label "Head (Steve)"
+  }
+ {:id 397
+  :data 4
+  :name :skull:4
+  :label "Head (Creeper)"
+  }
+ {:id 398
+  :data 0
+  :name :carrot-on-a-stick
+  :label "Carrot on a Stick"
+  }
+ {:id 399
+  :data 0
+  :name :nether-star
+  :label "Nether Star"
+  }
+ {:id 400
+  :data 0
+  :name :pumpkin-pie
+  :label "Pumpkin Pie"
+  }
+ {:id 401
+  :data 0
+  :name :fireworks
+  :label "Firework Rocket"
+  }
+ {:id 402
+  :data 0
+  :name :firework-charge
+  :label "Firework Star"
+  }
+ {:id 403
+  :data 0
+  :name :enchanted-book
+  :label "Enchanted Book"
+  }
+ {:id 404
+  :data 0
+  :name :comparator
+  :label "Redstone Comparator"
+  }
+ {:id 405
+  :data 0
+  :name :netherbrick
+  :label "Nether Brick (Item)"
+  }
+ {:id 406
+  :data 0
+  :name :quartz
+  :label "Nether Quartz"
+  }
+ {:id 407
+  :data 0
+  :name :tnt-minecart
+  :label "Minecart (TNT)"
+  }
+ {:id 408
+  :data 0
+  :name :hopper-minecart
+  :label "Minecart (Hopper)"
+  }
+ {:id 417
+  :data 0
+  :name :iron-horse-armor
+  :label "Iron Horse Armor"
+  }
+ {:id 418
+  :data 0
+  :name :golden-horse-armor
+  :label "Gold Horse Armor"
+  }
+ {:id 419
+  :data 0
+  :name :diamond-horse-armor
+  :label "Diamond Horse Armor"
+  }
+ {:id 420
+  :data 0
+  :name :lead
+  :label "Lead"
+  }
+ {:id 421
+  :data 0
+  :name :name-tag
+  :label "Name Tag"
+  }
+ {:id 422
+  :data 0
+  :name :command-block-minecart
+  :label "Minecart (Command Block)"
+  }
+ {:id 2256
+  :data 0
+  :name :record-13
+  :label "Music Disk (13)"
+  }
+ {:id 2257
+  :data 0
+  :name :record-cat
+  :label "Music Disk (Cat)"
+  }
+ {:id 2258
+  :data 0
+  :name :record-blocks
+  :label "Music Disk (Blocks)"
+  }
+ {:id 2259
+  :data 0
+  :name :record-chirp
+  :label "Music Disk (Chirp)"
+  }
+ {:id 2260
+  :data 0
+  :name :record-far
+  :label "Music Disk (Far)"
+  }
+ {:id 2261
+  :data 0
+  :name :record-mall
+  :label "Music Disk (Mall)"
+  }
+ {:id 2262
+  :data 0
+  :name :record-mellohi
+  :label "Music Disk (Mellohi)"
+  }
+ {:id 2263
+  :data 0
+  :name :record-stal
+  :label "Music Disk (Stal)"
+  }
+ {:id 2264
+  :data 0
+  :name :record-strad
+  :label "Music Disk (Strad)"
+  }
+ {:id 2265
+  :data 0
+  :name :record-ward
+  :label "Music Disk (Ward)"
+  }
+ {:id 2266
+  :data 0
+  :name :record-11
+  :label "Music Disk (11)"
+  }
+ {:id 2267
+  :data 0
+  :name :record-wait
+  :label "Music Disk (Wait)"
+  })
