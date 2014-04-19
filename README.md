@@ -57,6 +57,14 @@ If you already know the block id of the block you want to place you can use its 
     ;; ...is equivalent to
 	user=> (mc/set-block! server {:x 25 :y 55 :z 22} :cobblestone)
 	nil
+
+	;; Block names are kebab-case...
+	user=> (mc/set-block! server {:x 25 :y 55 :z 22} :red-flower)
+	nil
+
+	;; ...with optional data values (:red-flower:4 is a Tulip)
+	user=> (mc/set-block! server {:x 25 :y 55 :z 22} :red-flower:4)
+	nil
 ```
 
 In addition to [standard block names](http://minecraft.gamepedia.com/Data_values/Block_IDs), convenience names are also provided for coloured wool blocks.
@@ -66,12 +74,15 @@ In addition to [standard block names](http://minecraft.gamepedia.com/Data_values
 	nil
 
     ;; ...where the block type is one of
-    ;; [:white-wool :orange-wool :magenta-wool :light-blue-wool :yellow-wool :lime-wool :pink-wool :gray-wool :light-gray-wool :cyan-wool :purple-wool :blue-wool :brown-wool :green-wool :red-wool :black-wool]
+    ;; [:white-wool :orange-wool :magenta-wool :light-blue-wool
+	;;	:yellow-wool :lime-wool :pink-wool :gray-wool
+	;;	:light-gray-wool :cyan-wool :purple-wool :blue-wool
+	;;	:brown-wool :green-wool :red-wool :black-wool]
 ```
 
 ## No Raspberry Pi?
 
-Even you don't have a Raspberry Pi you can still run a vserion of the game which supports the Pi Edition API.
+Even you don't have a Raspberry Pi you can still run a version of the game which supports the Pi Edition API.
 
 This involves:
 
