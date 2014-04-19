@@ -5,12 +5,12 @@
             [clojure.string :as s]
             [redstone.blocks :refer [id->block name->block]]))
 
-(defn connect! [options]
+(defn connect! [server]
   (let [defaults {:host "localhost"
                   :port 4711
                   :frame (string :utf-8 :delimiters ["\n"])}]
     (wait-for-result
-     (tcp-client (merge defaults options)))))
+     (tcp-client (merge defaults server)))))
 
 (def connection
   (memoize connect!))
@@ -40,17 +40,17 @@
   java.lang.Boolean
   (as-rpc-arg [tf] (if tf 1 0)))
 
-(defn send! [options command]
-  (-> (connection options)
+(defn send! [server command]
+  (-> (connection server)
       (enqueue command)))
 
-(defn receive! [options]
-  (-> (connection options)
+(defn receive! [server]
+  (-> (connection server)
       (wait-for-message)))
 
-(defn send-receive! [options command]
-  (do (send! options command)
-      (receive! options)))
+(defn send-receive! [server command]
+  (do (send! server command)
+      (receive! server)))
 
 (defn format-rpc [rpc args]
   (->> (or args [])
@@ -59,14 +59,14 @@
        (format "%s(%s)" rpc)))
 
 (defn command [rpc]
-  (fn [conn & args]
+  (fn [server & args]
     (->> (format-rpc rpc args)
-         (send! conn))))
+         (send! server))))
 
 (defn query [rpc parse-fn]
-  (fn [conn & args]
+  (fn [server & args]
     (->> (format-rpc rpc args)
-         (send-receive! conn)
+         (send-receive! server)
          parse-fn)))
 
 (defn parse-long [x]
