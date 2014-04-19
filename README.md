@@ -1,6 +1,6 @@
 # Redstone
 
-A pure-Clojure interface to [Minecraft: Pi Edition](http://pi.minecraft.net/).
+A Clojure interface to [Minecraft: Pi Edition](http://pi.minecraft.net/).
 
 ![Clojure logo in Minecraft](https://raw.githubusercontent.com/henrygarner/redstone/master/doc/images/clojure-logo.png)
 
@@ -68,6 +68,17 @@ In addition to [standard block names](http://minecraft.gamepedia.com/Data_values
     ;; ...where the block type is one of
     ;; [:white-wool :orange-wool :magenta-wool :light-blue-wool :yellow-wool :lime-wool :pink-wool :gray-wool :light-gray-wool :cyan-wool :purple-wool :blue-wool :brown-wool :green-wool :red-wool :black-wool]
 ```
+
+## No Raspberry Pi?
+
+Even you don't have a Raspberry Pi you can still run a vserion of the game which supports the Pi Edition API.
+
+This involves:
+
+* Running a [Craftbukkit server](https://dl.bukkit.org/downloads/craftbukkit/)
+* Installing the [RaspberryJuice](http://blog.lostbearlabs.com/2013/04/25/using-the-minecraft-api-without-a-raspberry-pi-craftbukkit-and-raspberryjuice/) plugin to emulate Pi support
+
+Comprehensive instructions for setting up a Craftbukkit server with RaspberryJuice are [available here](http://blog.lostbearlabs.com/2013/04/25/using-the-minecraft-api-without-a-raspberry-pi-craftbukkit-and-raspberryjuice/).
 
 ## License
 
