@@ -86,8 +86,8 @@ Even you don't have a Raspberry Pi you can still run a version of the game which
 
 This involves:
 
-* Running a [Craftbukkit server](https://dl.bukkit.org/downloads/craftbukkit/)
-* Installing the [RaspberryJuice](http://blog.lostbearlabs.com/2013/04/25/using-the-minecraft-api-without-a-raspberry-pi-craftbukkit-and-raspberryjuice/) plugin to emulate Pi support
+* Running a [Craftbukkit server](http://dl.bukkit.org/)
+* Installing the [RaspberryJuice](http://dev.bukkit.org/bukkit-plugins/raspberryjuice/) plugin to emulate Pi support
 
 Comprehensive instructions for setting up a Craftbukkit server with RaspberryJuice are [available here](http://blog.lostbearlabs.com/2013/04/25/using-the-minecraft-api-without-a-raspberry-pi-craftbukkit-and-raspberryjuice/).
 
