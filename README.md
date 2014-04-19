@@ -2,6 +2,8 @@
 
 A pure-Clojure interface to Minecraft: Pi Edition
 
+![Clojure logo in Minecraft](https://raw.githubusercontent.com/henrygarner/redstone/master/doc/images/clojure-logo.png)
+
 ## Installation
 
 Add the following dependency to your `project.clj` file:
