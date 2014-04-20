@@ -99,6 +99,14 @@
                (map parse-long)
                (zipmap [:id :data]))))
 
+(def block-hits
+  (query "events.block.hits"
+         #(for [hit (->> (s/split % #"\|")
+                         (remove s/blank?))]
+            (->> (s/split hit #",")
+                 (map parse-long)
+                 (zipmap [:x :y :z :face :entity])))))
+
 (def set-block!
   (command "world.setBlock"))
 

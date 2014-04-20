@@ -31,4 +31,8 @@
       (is (= (player-position server) {:x 1.2 :y 3.4 :z 5.6})))
 
     (with-server-response "1,2,3"
-      (is (= (player-tile-position server) {:x 1 :y 2 :z 3})))))
+      (is (= (player-tile-position server) {:x 1 :y 2 :z 3})))
+
+    (with-server-response "1,2,3,4,166|4,3,2,1,166"
+      (is (= (block-hits server) [{:x 1 :y 2 :z 3 :face 4 :entity 166}
+                                  {:x 4 :y 3 :z 2 :face 1 :entity 166}])))))
