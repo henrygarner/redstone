@@ -1,4 +1,4 @@
-(defproject redstone "0.1.0"
+(defproject redstone "0.1.1"
   :description "A library for interacting with Minecraft: Pi Edition"
   :url "http://github.com/henrygarner/redstone"
   :license {:name "Eclipse Public License"
