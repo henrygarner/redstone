@@ -51,19 +51,22 @@ Blocks types are represented by maps of id and data.
 If you already know the block id of the block you want to place you can use its id and data values directly. Alternatively you can provide the block's name as a symbol. A complete list of available block types is [here](http://minecraft.gamepedia.com/Data_values/Block_IDs).
 
 ```clojure
-    user=> (mc/set-block! server {:x 25 :y 55 :z 22} {:id 4 :data 0})
+    user=> (def position {:x 25 :y 55 :z 22})
+	#'user/position
+
+    user=> (mc/set-block! server position {:id 4 :data 0})
 	nil
 
     ;; ...is equivalent to
-	user=> (mc/set-block! server {:x 25 :y 55 :z 22} :cobblestone)
+	user=> (mc/set-block! server position :cobblestone)
 	nil
 
 	;; Block names are kebab-case...
-	user=> (mc/set-block! server {:x 25 :y 55 :z 22} :red-flower)
+	user=> (mc/set-block! server position :red-flower)
 	nil
 
 	;; ...with optional data values (:red-flower:4 is a Tulip)
-	user=> (mc/set-block! server {:x 25 :y 55 :z 22} :red-flower:4)
+	user=> (mc/set-block! server position :red-flower:4)
 	nil
 ```
 
@@ -79,6 +82,11 @@ In addition to [standard block names](http://minecraft.gamepedia.com/Data_values
 	;;	:light-gray-wool :cyan-wool :purple-wool :blue-wool
 	;;	:brown-wool :green-wool :red-wool :black-wool]
 ```
+
+## More Examples
+
+For inspiration check out the [Minecraft Sketchpad](https://github.com/henrygarner/minecraft-sketchpad) repository.
+
 
 ## No Raspberry Pi?
 
