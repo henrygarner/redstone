@@ -83,6 +83,22 @@ In addition to [standard block names](http://minecraft.gamepedia.com/Data_values
 	;;	:brown-wool :green-wool :red-wool :black-wool]
 ```
 
+You can set up event listeners by calling `listen!` with an event and handler function. The handler function will be called with the server and event data each time the event occurs.
+
+```clojure
+    user=> (defn event-handler [server event]
+             (prn event))
+    #'user/callback
+
+    user=> (mc/listen! server :block:hit event-handler)
+    nil
+
+    ;; Hit a block with a sword
+	{:event :block:hit, :position {:x 1, :y 2, :z 3}, :face 4, :player-id 10}
+```
+
+`:block:hit` is the only event emitted.
+
 ## More Examples
 
 For inspiration check out the [Minecraft Sketchpad](https://github.com/henrygarner/minecraft-sketchpad) repository.

@@ -101,11 +101,14 @@
 
 (def block-hits
   (query "events.block.hits"
-         #(for [hit (->> (s/split % #"\|")
-                         (remove s/blank?))]
-            (->> (s/split hit #",")
-                 (map parse-long)
-                 (zipmap [:x :y :z :face :entity])))))
+         #(for [hit (remove s/blank? (s/split % #"\|"))]
+            (let [parsed (->> (s/split hit #",")
+                              (map parse-long)
+                              (zipmap [:x :y :z :face :player-id]))]
+              (-> parsed
+                  (select-keys [:player-id :face])
+                  (merge {:position (select-keys parsed [:z :y :x])
+                          :event :block:hit}))))))
 
 (def set-block!
   (command "world.setBlock"))
@@ -145,3 +148,20 @@
 
 (def set-player!
   (command "player.setting"))
+
+(def listeners
+  (atom {}))
+
+(defn listen! [server event handler]
+  (when (= event :block:hit)
+    (swap! listeners update-in [server] conj handler)
+    nil))
+
+(defonce poll-for-events!
+  (future
+    (while true
+      (doseq [[server handlers] @listeners
+              handler handlers
+              event (block-hits server)]
+        (handler server event))
+      (Thread/sleep 200))))
