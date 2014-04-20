@@ -77,27 +77,34 @@ In addition to [standard block names](http://minecraft.gamepedia.com/Data_values
 	nil
 
     ;; ...where the block type is one of
-    ;; [:white-wool :orange-wool :magenta-wool :light-blue-wool
-	;;	:yellow-wool :lime-wool :pink-wool :gray-wool
-	;;	:light-gray-wool :cyan-wool :purple-wool :blue-wool
-	;;	:brown-wool :green-wool :red-wool :black-wool]
+	;; {:white|:orange|:magenta|:light-blue|:yellow|:lime|:pink|:gray|:light-gray|:cyan|:purple|:blue|:brown|:green|:red|:black}-wool
 ```
+
+### Events
 
 You can set up event listeners by calling `listen!` with an event and handler function. The handler function will be called with the server and event data each time the event occurs.
 
 ```clojure
     user=> (defn event-handler [server event]
              (prn event))
-    #'user/callback
+    #'user/event-handler
 
     user=> (mc/listen! server :block:hit event-handler)
     nil
 
     ;; Hit a block with a sword
 	{:event :block:hit, :position {:x 1, :y 2, :z 3}, :face 4, :player-id 10}
+	
+	user=> (defn midas-touch [server event]
+	         (mc/set-block! server (:position event) :gold-block))
+	#'user/midas-touch
+
+    ;; Turn everything to gold!
+	user=> (mc/listen! server :block:hit midas-touch)
+	nil
 ```
 
-`:block:hit` is the only event emitted.
+`:block:hit` is the only event currently emitted.
 
 ## More Examples
 
