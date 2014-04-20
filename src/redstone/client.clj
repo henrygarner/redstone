@@ -93,22 +93,12 @@
                (map parse-long)
                (zipmap [:x :y :z]))))
 
-(def get-block
+(def block-at
   (query "world.getBlockWithData"
          #(->> (s/split % #",")
                (map parse-long)
                (zipmap [:id :data]))))
-
-(def block-hits
-  (query "events.block.hits"
-         #(for [hit (remove s/blank? (s/split % #"\|"))]
-            (let [parsed (->> (s/split hit #",")
-                              (map parse-long)
-                              (zipmap [:x :y :z :face :player-id]))]
-              (-> parsed
-                  (select-keys [:player-id :face])
-                  (merge {:position (select-keys parsed [:z :y :x])
-                          :event :block:hit}))))))
+(def get-block block-at)
 
 (def set-block!
   (command "world.setBlock"))
@@ -157,11 +147,22 @@
     (swap! listeners update-in [server] conj handler)
     nil))
 
-(defonce poll-for-events!
+(def block-hits!
+  (query "events.block.hits"
+         #(for [hit (remove s/blank? (s/split % #"\|"))]
+            (let [parsed (->> (s/split hit #",")
+                              (map parse-long)
+                              (zipmap [:x :y :z :face :player-id]))]
+              (-> parsed
+                  (select-keys [:player-id :face])
+                  (merge {:position (select-keys parsed [:z :y :x])
+                          :event :block:hit}))))))
+
+(defonce poll-events!
   (future
     (while true
       (doseq [[server handlers] @listeners
               handler handlers
-              event (block-hits server)]
+              event (block-hits! server)]
         (handler server event))
       (Thread/sleep 200))))

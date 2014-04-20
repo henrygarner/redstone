@@ -42,9 +42,9 @@ Blocks types are represented by maps of id and data.
 
 ```clojure
     ;; Get the block the player is standing on
-    user=> (let [player-position    (mc/player-tile-position server)
-	             block-under-player (update-in player-position [:y] dec)]
-             (mc/get-block server block-under-player))
+    user=> (let [player-position       (mc/player-tile-position server)
+                 position-under-player (update-in player-position [:y] dec)]
+             (mc/block-at server position-under-player))
     {:data 0 :id 2}
 ```
 

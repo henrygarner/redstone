@@ -25,7 +25,7 @@
 (deftest test-resonses
   (let [server {}]
     (with-server-response "1,2"
-      (is (= (get-block server {:x 10 :y 11 :z 12}) {:id 1 :data 2})))
+      (is (= (block-at server {:x 10 :y 11 :z 12}) {:id 1 :data 2})))
     
     (with-server-response "1.2,3.4,5.6"
       (is (= (player-position server) {:x 1.2 :y 3.4 :z 5.6})))
@@ -34,7 +34,7 @@
       (is (= (player-tile-position server) {:x 1 :y 2 :z 3})))
 
     (with-server-response "1,2,3,4,10|4,3,2,1,10"
-      (is (= (block-hits server) [{:event :block:hit
-                                   :position {:x 1 :y 2 :z 3} :face 4 :player-id 10}
-                                  {:event :block:hit
-                                   :position {:x 4 :y 3 :z 2} :face 1 :player-id 10}])))))
+      (is (= (block-hits! server) [{:event :block:hit
+                                    :position {:x 1 :y 2 :z 3} :face 4 :player-id 10}
+                                   {:event :block:hit
+                                    :position {:x 4 :y 3 :z 2} :face 1 :player-id 10}])))))
