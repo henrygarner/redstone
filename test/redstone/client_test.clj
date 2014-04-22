@@ -1,6 +1,8 @@
 (ns redstone.client-test
   (:require [clojure.test :refer :all]
-            [redstone.client :refer :all]))
+            [redstone
+             [core :refer :all]
+             [client :refer :all]]))
 
 (defmacro with-server-response [response & body]
   `(with-redefs [send-receive! (fn [_# _#] ~response)]
@@ -25,7 +27,7 @@
 (deftest test-resonses
   (let [server {}]
     (with-server-response "1,2"
-      (is (= (block-at server {:x 10 :y 11 :z 12}) {:id 1 :data 2})))
+      (is (= (block server {:x 10 :y 11 :z 12}) {:id 1 :data 2})))
     
     (with-server-response "1.2,3.4,5.6"
       (is (= (player-position server) {:x 1.2 :y 3.4 :z 5.6})))
@@ -37,4 +39,10 @@
       (is (= (block-hits! server) [{:event :block:hit
                                     :position {:x 1 :y 2 :z 3} :face 4 :player-id 10}
                                    {:event :block:hit
-                                    :position {:x 4 :y 3 :z 2} :face 1 :player-id 10}])))))
+                                    :position {:x 4 :y 3 :z 2} :face 1 :player-id 10}])))
+
+    (with-server-response "1,2,3,4,5,6"
+      (let [from {:x 0 :y 0 :z 0}
+            to   {:x 0 :y 1 :z 2}]
+        (is (= (blocks server from to)
+               [{:id 1} {:id 2} {:id 3} {:id 4} {:id 5} {:id 6}]))))))
