@@ -27,7 +27,7 @@
 (deftest test-resonses
   (let [server {}]
     (with-server-response "1,2"
-      (is (= (block server {:x 10 :y 11 :z 12}) {:id 1 :data 2})))
+      (is (= (block-at server {:x 10 :y 11 :z 12}) {:id 1 :data 2})))
     
     (with-server-response "1.2,3.4,5.6"
       (is (= (player-position server) {:x 1.2 :y 3.4 :z 5.6})))
@@ -44,5 +44,5 @@
     (with-server-response "1,2,3,4,5,6"
       (let [from {:x 0 :y 0 :z 0}
             to   {:x 0 :y 1 :z 2}]
-        (is (= (blocks server from to)
+        (is (= (blocks-between server from to)
                [{:id 1} {:id 2} {:id 3} {:id 4} {:id 5} {:id 6}]))))))
