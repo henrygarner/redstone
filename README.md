@@ -9,7 +9,7 @@ A Clojure interface to [Minecraft: Pi Edition](http://pi.minecraft.net/).
 Add the following dependency to your `project.clj` file:
 
 ```clojure
-    [redstone "0.1.2"]
+    [redstone "0.1.3"]
 ```
 
 ## Usage
