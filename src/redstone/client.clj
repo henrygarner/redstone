@@ -25,14 +25,14 @@
                (map parse-long)
                (zipmap [:x :y :z]))))
 
-(def block
+(def block-at
   "The block at the specified position"
   (query "world.getBlockWithData"
          #(->> (s/split % #",")
                (map parse-long)
                (zipmap [:id :data]))))
 
-(def blocks
+(def blocks-between
   "The blocks between two coordinates.
    Requires RaspberryJuice >= 1.3"
   (query "world.getBlocks"
@@ -40,11 +40,11 @@
                (map parse-long)
                (map (partial assoc {} :id)))))
 
-(def set-block!
+(def set-block-at!
   "Sets the block at the given coordinates"
   (command "world.setBlock"))
 
-(def set-blocks!
+(def set-blocks-between!
   "Set all blocks between two coordinates"
   (command "world.setBlocks"))
 
