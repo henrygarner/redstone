@@ -21,7 +21,7 @@ Add the following dependency to your `project.clj` file:
       {:host "localhost"
        :port 4711})
 
-    (mc/post-message! server "Hello Minecraft")
+    (mc/send-message! server "Hello Minecraft")
 ```
 
 ## Examples
@@ -44,7 +44,8 @@ Blocks types are represented by maps of id and data.
     ;; Get the block the player is standing on
     user=> (let [player-position       (mc/player-tile-position server)
                  position-under-player (update-in player-position [:y] dec)]
-             (mc/block-at server position-under-player))
+             (-> server
+			     (mc/block-at position-under-player))
     {:data 0 :id 2}
 ```
 
@@ -54,26 +55,26 @@ If you already know the block id of the block you want to place you can use its 
     user=> (def position {:x 25 :y 55 :z 22})
 	#'user/position
 
-    user=> (mc/set-block! server position {:id 4 :data 0})
+    user=> (mc/set-block-at! server position {:id 4 :data 0})
 	nil
 
     ;; ...is equivalent to
-	user=> (mc/set-block! server position :cobblestone)
+	user=> (mc/set-block-at! server position :cobblestone)
 	nil
 
 	;; Block names are kebab-case...
-	user=> (mc/set-block! server position :red-flower)
+	user=> (mc/set-block-at! server position :red-flower)
 	nil
 
 	;; ...with optional data values (:red-flower:4 is a Tulip)
-	user=> (mc/set-block! server position :red-flower:4)
+	user=> (mc/set-block-at! server position :red-flower:4)
 	nil
 ```
 
 In addition to [standard block names](http://minecraft.gamepedia.com/Data_values/Block_IDs), convenience names are also provided for coloured wool blocks.
 
 ```clojure
-    user=> (mc/set-block! server {:x 25 :y 55 :z 22} :orange-wool)
+    user=> (mc/set-block-at! server position :orange-wool)
 	nil
 
     ;; ...where the block type is one of
@@ -96,7 +97,7 @@ You can set up event listeners by calling `listen!` with an event and handler fu
 	{:event :block:hit, :position {:x 1, :y 2, :z 3}, :face 4, :player-id 10}
 	
 	user=> (defn midas-touch [server event]
-	         (mc/set-block! server (:position event) :gold-block))
+	         (mc/set-block-at! server (:position event) :gold-block))
 	#'user/midas-touch
 
     ;; Turn everything to gold!

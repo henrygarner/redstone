@@ -1,168 +1,104 @@
 (ns redstone.client
-  (:require [aleph.tcp :as tcp :refer [tcp-client]]
-            [lamina.core :refer [wait-for-result enqueue wait-for-message]]
-            [gloss.core :refer [string]]
-            [clojure.string :as s]
-            [redstone.blocks :refer [id->block name->block]]))
+  (:require [clojure.string :as s]
+            [redstone.core :refer [command query listeners
+                                   parse-long parse-double]]))
 
-(defn connect! [server]
-  (let [defaults {:host "localhost"
-                  :port 4711
-                  :frame (string :utf-8 :delimiters ["\n"])}]
-    (wait-for-result
-     (tcp-client (merge defaults server)))))
-
-(def connection
-  (memoize connect!))
-
-(defprotocol RPCArgument
-  (as-rpc-arg [_]))
-
-(extend-protocol RPCArgument
-  clojure.lang.Keyword
-  (as-rpc-arg [kw]
-    (when-let [{:keys [id data]} (get name->block kw)]
-      [id data]))
-
-  java.lang.Number
-  (as-rpc-arg [x] x)
-
-  java.lang.String
-  (as-rpc-arg [s] s)
-
-  java.util.Map
-  (as-rpc-arg [xs]
-    (remove nil? ((juxt :x :y :z :id :data) xs)))
-
-  java.util.List
-  (as-rpc-arg [xs] (flatten (map as-rpc-arg xs)))
-
-  java.lang.Boolean
-  (as-rpc-arg [tf] (if tf 1 0)))
-
-(defn send! [server command]
-  (-> (connection server)
-      (enqueue command)))
-
-(defn receive! [server]
-  (-> (connection server)
-      (wait-for-message)))
-
-(defn send-receive! [server command]
-  (do (send! server command)
-      (receive! server)))
-
-(defn format-rpc [rpc args]
-  (->> (or args [])
-       as-rpc-arg
-       (s/join ",")
-       (format "%s(%s)" rpc)))
-
-(defn command [rpc]
-  (fn [server & args]
-    (->> (format-rpc rpc args)
-         (send! server))))
-
-(defn query [rpc parse-fn]
-  (fn [server & args]
-    (->> (format-rpc rpc args)
-         (send-receive! server)
-         parse-fn)))
-
-(defn parse-long [x]
-  (Long/parseLong x))
-
-(defn parse-double [x]
-  (Double/parseDouble x))
-
-(def player-ids
+(def players
+  "Returns a sequence of connected players"
   (query "world.getPlayerIds"
          #(->> (s/split % #"\|")
                (remove s/blank?)
-               (map parse-long))))
+               (map parse-long)
+               (map (partial assoc {} :id)))))
 
 (def player-position
+  "The player's position as a map of :x, :y, :z coordinates"
   (query "player.getPos"
          #(->> (s/split % #",")
                (map parse-double)
                (zipmap [:x :y :z]))))
 
 (def player-tile-position
+  "The player's tile position as a map of :x, :y, :z coordinates"
   (query "player.getTile"
          #(->> (s/split % #",")
                (map parse-long)
                (zipmap [:x :y :z]))))
 
 (def block-at
+  "The block at the specified position"
   (query "world.getBlockWithData"
          #(->> (s/split % #",")
                (map parse-long)
                (zipmap [:id :data]))))
-(def get-block block-at)
 
-(def set-block!
+(def blocks-between
+  "The blocks between two coordinates.
+   Requires RaspberryJuice >= 1.3"
+  (query "world.getBlocks"
+         #(->> (s/split % #",")
+               (map parse-long)
+               (map (partial assoc {} :id)))))
+
+(def set-block-at!
+  "Sets the block at the given coordinates"
   (command "world.setBlock"))
 
-(def set-blocks!
+(def set-blocks-between!
+  "Set all blocks between two coordinates"
   (command "world.setBlocks"))
 
 (def set-player-tile-position!
+  "Move the player to the given coordinates"
   (command "player.setTile"))
 
-(def set-camera-normal!
-  (command "camera.mode.setNormal"))
-
-(def set-camera-fixed!
-  (command "camera.mode.setFixed"))
-
-(def set-camera-follow!
-  (command "camera.mode.setFollow"))
-
-(def set-camera-position!
-  (command "camera.setPos"))
-
-(def clear-events!
-  (command "events.clear"))
-
-(def save-checkpoint!
-  (command "world.checkpoint.save"))
-
-(def restore-checkpoint!
-  (command "world.checkpoint.restore"))
-
-(def post-message!
+(def send-message!
+  "Send a chat message to the server"
   (command "chat.post"))
 
-(def set-world!
-  (command "world.setting"))
-
-(def set-player!
-  (command "player.setting"))
-
-(def listeners
-  (atom {}))
-
-(defn listen! [server event handler]
+(defn listen!
+  "Specify a handler function for a given event"
+  [server event handler]
   (when (= event :block:hit)
     (swap! listeners update-in [server] conj handler)
     nil))
 
-(def block-hits!
-  (query "events.block.hits"
-         #(for [hit (remove s/blank? (s/split % #"\|"))]
-            (let [parsed (->> (s/split hit #",")
-                              (map parse-long)
-                              (zipmap [:x :y :z :face :player-id]))]
-              (-> parsed
-                  (select-keys [:player-id :face])
-                  (merge {:position (select-keys parsed [:z :y :x])
-                          :event :block:hit}))))))
+(def clear-events!
+  "Clears events from the server-side buffer.
+   Call before setting up the first event listener if
+   you don't want to receive events already captured"
+  (command "events.clear"))
 
-(defonce poll-events!
-  (future
-    (while true
-      (doseq [[server handlers] @listeners
-              handler handlers
-              event (block-hits! server)]
-        (handler server event))
-      (Thread/sleep 200))))
+;; Not implemented in RaspberryJuice
+
+(def set-camera-normal!
+  "Not implemented in RaspberryJuice"
+  (command "camera.mode.setNormal"))
+
+(def set-camera-fixed!
+  "Not implemented in RaspberryJuice"
+  (command "camera.mode.setFixed"))
+
+(def set-camera-follow!
+  "Not implemented in RaspberryJuice"
+  (command "camera.mode.setFollow"))
+
+(def set-camera-position!
+  "Not implemented in RaspberryJuice"
+  (command "camera.setPos"))
+
+(def save-checkpoint!
+  "Not implemented in RaspberryJuice"
+  (command "world.checkpoint.save"))
+
+(def restore-checkpoint!
+  "Not implemented in RaspberryJuice"
+  (command "world.checkpoint.restore"))
+
+(def set-world!
+  "Not implemented in RaspberryJuice"
+  (command "world.setting"))
+
+(def set-player!
+  "Not implemented in RaspberryJuice"
+  (command "player.setting"))
