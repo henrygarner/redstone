@@ -15,7 +15,7 @@ Add the following dependency to your `project.clj` file:
 ## Usage
 
 ```clojure
-    (require [redstone.client :as mc])
+    (require '[redstone.client :as mc])
 
     (def server
       {:host "localhost"
